@@ -4,6 +4,11 @@ Geel: #FDCC12
 Rood: #8B1734
 */
 
+.logo {
+    background-color: #8B1734;
+    border: 3px solid #8B1734;
+}
+
 @media (min-width: 768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -19,6 +24,18 @@ Rood: #8B1734
         background: #8b1734;
         /*border-bottom: 1px solid rgba(253, 204, 18, 0.3);*/
     }
+
+    .logo {
+        height: 75px;
+    }
+
+    .navbar {
+        height: 65px;
+    }
+
+    .navbar-brand {
+        padding-top: 3px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -28,6 +45,18 @@ Rood: #8B1734
 
     .navbar-custom.top-nav-collapse {
         background: #8b1734;
+    }
+
+    .logo {
+        height: inherit;
+    }
+
+    .navbar-brand {
+        padding-top: 5px;
+    }
+
+    .navbar {
+        height: 61px;
     }
 }
 
