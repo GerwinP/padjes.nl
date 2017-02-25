@@ -1,3 +1,9 @@
+/*
+Colors:
+Geel: #FDCC12
+Rood: #8B1734
+*/
+
 @media (min-width: 768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -10,8 +16,18 @@
     }
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        background: black;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        background: #8b1734;
+        /*border-bottom: 1px solid rgba(253, 204, 18, 0.3);*/
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-custom {
+        background: transparent;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        background: #8b1734;
     }
 }
 
@@ -20,5 +36,20 @@
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(255, 255, 255, 0.3);
+    /*background-color: rgba(253, 204, 18, 0.3);*/
+    border-bottom: 1px solid #FDCC12;
+}
+
+.navbar-default.affix .nav > li > a {
+    color: #FFFFFF;
+}
+
+.navbar-default.affix .nav > li > a:hover {
+    color: #FDCC12;
+}
+
+.navbar-default .nav > li.active > a,
+.navbar-default .nav > li.active > a:focus {
+    color: #FDCC12;
+    /*background-color: transparent;*/
 }
