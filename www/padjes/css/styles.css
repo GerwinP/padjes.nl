@@ -4,6 +4,15 @@ Geel: #FDCC12
 Rood: #8B1734
 */
 
+.bg-primary{
+    background-color: #fef2c1;
+    color: #333;
+}
+
+.primary {
+    border-color: #8B1734;
+}
+
 .logo {
     background-color: #8B1734;
     border: 3px solid #8B1734;
@@ -44,7 +53,12 @@ Rood: #8B1734
 	.navbar-nav>li>a {
 		padding-bottom: 20px;
 		padding-top: 22px;
+        /*text-shadow: 1px 1px black;*/
 	}
+
+    .affix-top li a {
+        text-shadow: 1px 1px black;
+    }
 	
 	.navbar-default.affix .nav > li > a,
 	.navbar-default.affix .nav > li > a:focus {
@@ -138,7 +152,7 @@ Rood: #8B1734
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
 }
-.btn {
+.btn-special {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
