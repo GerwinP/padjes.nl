@@ -83,7 +83,7 @@
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <div class="col-lg-8 col-lg-offset-2 text-center" style="padding-bottom: 50px">
                     <h2 class="section-heading">Wie wij zijn:</h2>
                     <hr class="primary">
                     <p class="text-muted">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
@@ -177,8 +177,8 @@
 
     <section class="no-padding" id="portfolio">
         <div class="container">
-            <div class="row no-gutter popup-gallery" style="padding-bottom: 50px">
-                <div class="col-lg-5 col-sm-6">
+            <div class="row no-gutter popup-gallery ">
+                <div class="col-lg-5 col-sm-6 vcenter image" >
                     <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
                         <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -192,17 +192,16 @@
                             </div>
                         </div>
                     </a>
-                </div>
-                <div class="col-lg-7 col-sm-6 text-center" style="padding-left: 15px">
-                    <h3 class="section-heading">Geïnteresseerd?</h3>
+                </div><div class="col-lg-7 col-sm-6 text-center vcenter left text">
+                    <h3 class="section-heading">1</h3>
                     <p class="text-muted">Voor meer informatie over onze diensten of het aanvragen van een offerte kunt u contact met ons opnemen. </p>
                 </div>
             </div>
             <div class="row no-gutter popup-gallery">
-                <div class="col-lg-7 col-sm-6">
-
-                </div>
-                <div class="col-lg-5 col-sm-6">
+                <div class="col-lg-7 col-sm-6 text-center vcenter text">
+                    <h3 class="section-heading">2</h3>
+                    <p class="text-muted">Voor meer informatie over onze diensten of het aanvragen van een offerte kunt u contact met ons opnemen. </p>
+                </div><div class="col-lg-5 col-sm-6 vcenter left image">
                     <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
                         <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -264,6 +263,22 @@
     <!-- Theme JavaScript -->
     <script src="js/creative.js"></script>
     <script src="js/javascript.js"></script>
+    <script>
+        function reorder(){
+            if ($(window).width() < 768){
+                var allText = $('.text');
+                for (var i = 0; i < allText.length; i++){
+                    var text = allText[i];
+                    var image = $(text).siblings();
+                    $(image).insertBefore(text);
+                }
+            } else {
+                //Hier moet gezorgd worden dat de originele volgorde aangehouden wordt
+            }
+        }
+        reorder();
+        window.addEventListener('resize',reorder);
+    </script>
 
 </body>
 

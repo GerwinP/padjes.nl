@@ -63,11 +63,20 @@ Rood: #8B1734
 	.navbar-default.affix .nav > li > a:focus {
 		color: #FDCC12;
     }
+
 	
 	.navbar-custom .nav li.active a {
 		/*background-color: rgba(253, 204, 18, 0.3);*/
         box-shadow: inset 0 -3px 0 0 #FDCC12;
 	}
+
+    .left {
+        padding-left: 15px;
+    }
+
+    .popup-gallery {
+        padding-bottom: 50px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -95,6 +104,11 @@ Rood: #8B1734
 	.navbar-default .navbar-form {
 		background-color:#8B1734;
 	}
+
+    .navbar-default .nav > li > a:hover,
+    .navbar-default .nav > li > a:focus:hover {
+        color: #FDCC12;
+    }
 }
 
 .navbar-custom .nav li.active {
@@ -232,4 +246,10 @@ a {
 a:hover,
 a:focus {
   color: #FDCC12;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
