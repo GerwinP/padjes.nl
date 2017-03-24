@@ -225,3 +225,12 @@ header {
 .navbar-default .navbar-form {
     border-color: #FFFFFF;
 }
+
+a {
+	color: #8B1734;
+}
+
+a:hover,
+a:focus {
+  color: #FDCC12;
+}
